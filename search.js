@@ -1,3 +1,4 @@
+alert("HI")
 $(document).on("keypress", "input", function(e){
   if (e.which == 13) {
     let search = $(this).val();
