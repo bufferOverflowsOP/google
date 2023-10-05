@@ -1,7 +1,8 @@
-display.innerHTML = searchup.value;
-alert("HI")
+
 $(document).on("keypress", "input", function(e){
   if (e.which == 13) {
+    display.innerHTML = searchup.value;
+    alert("HI")
     let search = $(this).val();
     if (!(search.slice(0, 8) == "https://" || search.slice(0, 7) == "http://")){
       for (i in search) {
