@@ -1,7 +1,15 @@
-var results = document.getElementById("result");
-var display = document.getElementById("display-result");
 $(document).on("keypress", "input", function(e){
   if (e.which == 13) {
-    window.open($(this).val(), "_blank");
+    let search = $(this).val();
+    if (!(search.slice(0, 8) == "https://" || search.slice(0, 7) == "http://") && ){
+      for (i in search) {
+        if (i == "." && i == search.length - 3) {
+          search = "https://" + search;
+          window.open(search, "_blank);
+        }
+      }
+    } else {
+      window.open(search, "_blank");
+    }
   }
 });
