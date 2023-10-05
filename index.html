@@ -11,10 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
       $(document).on("keypress", "input", function(e){
-        if(e.which == 13){
-          var inputVal = $(this).val();
-          alert("Search success! "+ inputVal);
-        }
+        window.open(e, "_blank")
       });
     </script>
   </head>
@@ -22,8 +19,8 @@
     <div class="alt" id="alt">
       <center>
         <h1>Google</h1>
-        <form action="www.google.com">
-          <input id="search" type="submit" name="search" size="50" placeholder="Search Google or type a URL" autocomplete="off"></input>
+        <form>
+          <input id="search" type="input" name="search" size="50" placeholder="Search Google or type a URL" autocomplete="off"></input>
         </form>
         <div id="result" class="result">
           <h2>Results</h2>
