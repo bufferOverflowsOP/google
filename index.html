@@ -12,7 +12,7 @@
     <script>
       $(document).on("keypress", "input", function(e){
         if (e.which == 13) {
-          window.open(e, "_blank");
+          window.open($(this).val(), "_blank");
         }
       });
     </script>
