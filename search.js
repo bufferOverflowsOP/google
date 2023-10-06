@@ -7,8 +7,6 @@ $(document).on("keypress", "input", function(e){
         if (i == "." && i == search.length - 4) {
           search = "https://" + search;
           window.open(search, "_blank");
-        } else {
-          alert("Website not found at: 'https://" + search + "'");
         }
       }
     } else {
